@@ -6,7 +6,7 @@ export default function StandingSection({ standing }) {
   const { _id, group, teams } = standing
 
   return (
-    <div className='p-4 shadow bg-gray-50 rounded-lg mt-4'>
+    <div className='p-4 shadow bg-gray-50 rounded-lg '>
       <div className='grid grid-cols-7 text-xs'>
         <p className='font-bold col-span-2'>Group {group}</p>
         <p className='mx-auto'>Played</p>

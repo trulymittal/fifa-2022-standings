@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
         head.jsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className='container mx-auto'>
+      <body className='container max-w-6xl mx-auto flex flex-col min-h-screen'>
         <nav className='py-3 border-b-2'>
           <div className='flex justify-between'>
             <Link href='/'>
@@ -22,7 +22,13 @@ export default function RootLayout({ children }) {
             </p>
           </div>
         </nav>
-        {children}
+        <main className='my-8 grow'>{children}</main>
+        <footer className='border-t-2 py-4 '>
+          <p className='flex justify-center space-x-4'>
+            <span>&copy; {DateTime.now().year}</span>
+            <span>Only for Educational purpose</span>
+          </p>
+        </footer>
       </body>
     </html>
   )
