@@ -17,12 +17,12 @@ export default function RootLayout({ children }) {
             <Link href='/'>
               <h1 className='text-3xl font-black text-red-600'>FIFA WC 2022</h1>
             </Link>
-            <p className='my-auto font-semibold text-sm'>
+            {/* <p className='my-auto font-semibold text-sm'>
               {DateTime.now().toLocaleString(DateTime.DATETIME_MED)}
-            </p>
+            </p> */}
           </div>
         </nav>
-        <main className='my-8 grow'>{children}</main>
+        <main className='my-4 grow'>{children}</main>
         <footer className='border-t-2 py-4 '>
           <p className='flex justify-center space-x-4'>
             <span>&copy; {DateTime.now().year}</span>
